@@ -1,6 +1,6 @@
 class common_scripts{
 
-  if $fact['os']['family'] == 'windows'{
+  if $::facts['os']['family'] == 'windows'{
 
     $common_scripts_dir = "C:\\common_scripts"
     file { $common_scripts_dir:
